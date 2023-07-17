@@ -25,7 +25,6 @@ export default {
   methods: {
     async submit() {
       try {
-        console.log("sssss");
         const response = await fetch("http://localhost:9999/stripe-checkout", {
           method: "post",
           headers: { "Content-Type": "application/json" },
